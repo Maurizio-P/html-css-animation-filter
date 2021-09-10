@@ -1,0 +1,204 @@
+.ex-1-square {
+    transition: 3s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-2-square {
+    transition: 2s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+.ex-3-square {
+    transition: 3s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+.ex-4-square {
+    transition: 3s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+.ex-5-square {
+    transition: transform .5s;
+}
+
+.ex-5-square:hover {
+    /* height: 80px;
+    width: 80px; */
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    /* height: 40px;
+    width: 40px; */
+    transform: scale(0.5);
+}
+
+.ex-6-img {
+    transition: 0;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img {
+    transition: 3s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: blur(1px) grayscale(100%);
+    border-radius: 20%;
+}
+
+.ex-9-img {
+    transition: 3s;
+}
+
+.ex-9-img:hover {
+    filter: blur(1px) grayscale(100%);
+    border-radius: 30%;
+    transform: scale(1.2);
+}
+
+.ex-10-icon {
+    animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.ex-11-icon:hover {
+    animation: around11 2s linear infinite;
+    
+}
+
+@keyframes around11 {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-top-white {
+    animation: move-top-space .5s linear infinite;
+}
+
+@keyframes move-top-space {
+    0 {
+        left: 0;
+    }
+
+    50% {
+        left: 70%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.ex-12-bottom-white {
+    animation: move-bottom-space .5s linear infinite;
+}
+
+@keyframes move-bottom-space {
+    0 {
+        left: 0%;
+    }
+
+    50% {
+        right: 70%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.ex-13-top-white {
+    animation: move-top-space-13 1s linear infinite;
+}
+
+@keyframes move-top-space-13 {
+    0 {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: 100%;
+        top: 0;
+    }
+
+    75% {
+        left: 100%;
+        top: 100%;
+    }
+
+    100% {
+        left: 80%;
+        top: 100%;
+    }
+}
+
+.ex-13-bottom-white {
+    animation: move-bottom-space-13 1s linear infinite;
+}
+
+@keyframes move-bottom-space-13 {
+    0 {
+        right: 0%;
+        bottom: 0;
+    }
+
+    50% {
+        right: 80%;
+        bottom: 0;
+    }
+
+    75% {
+        right: 80%;
+        bottom: 100%;
+    }
+
+    100% {
+        right: 60%;
+        bottom: 100%;
+    }
+}
